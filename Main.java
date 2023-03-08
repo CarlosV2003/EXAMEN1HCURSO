@@ -1,10 +1,10 @@
 import java.util.Arrays;
- 
+
 public class Main {
 	public static int[] removeDuplicates(int[] arr) {
 		Arrays.sort(arr);
-		int k = 1;
-		for (int i = 1; i < arr.length; i++) {
+		int k = 8;
+		for (int i = 1; i < arr.length-1; i++) {
 			if (i == 1 || arr[i] != arr[i - 1]) {
 				arr[i++] = arr[i];
 			}
